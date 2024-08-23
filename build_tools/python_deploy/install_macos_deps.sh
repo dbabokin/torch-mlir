@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Copyright 2022 The IREE Authors
+# Copyright 2022-2024 The IREE Authors
 #
 # Licensed under the Apache License v2.0 with LLVM Exceptions.
 # See https://llvm.org/LICENSE.txt for license information.
@@ -19,12 +19,14 @@ if [[ "$(whoami)" != "root" ]]; then
 fi
 
 PYTHON_INSTALLER_URLS=(
+  "https://www.python.org/ftp/python/3.12.5/python-3.12.5-macos11.pkg"
   "https://www.python.org/ftp/python/3.11.9/python-3.11.9-macos11.pkg"
   "https://www.python.org/ftp/python/3.10.11/python-3.10.11-macos11.pkg"
   "https://www.python.org/ftp/python/3.9.13/python-3.9.13-macos11.pkg"
 )
 
 PYTHON_SPECS=(
+  3.12@https://www.python.org/ftp/python/3.12.5/python-3.12.5-macos11.pkg
   3.11@https://www.python.org/ftp/python/3.11.9/python-3.11.9-macos11.pkg
   3.10@https://www.python.org/ftp/python/3.10.11/python-3.10.11-macos11.pkg
   3.9@https://www.python.org/ftp/python/3.9.13/python-3.9.13-macos11.pkg
